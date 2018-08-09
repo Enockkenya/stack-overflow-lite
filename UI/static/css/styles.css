@@ -21,8 +21,8 @@ body{
     
  }
  .container {
-    width: 380px;
-    padding-left: 512px;
+    max-width: 380px;
+    padding-left: 500px;
     
     
 }
@@ -98,16 +98,61 @@ h2{
   height:100vh;
   display:flex;
   align-items:center;
-  color:#fff;
+  color: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+  background-size: cover;
  
 }
 
-.container{
+.containerindex{
   max-width:920px;
-  padding-left:80px;
+  padding-left:20px;
   margin:auto;
   text-align:center;
+
 }
+.header-overlay{
+  height:88vh;
+  position: absolute;
+  top:77px;
+  left:0;
+  width:100vw;
+  z-index:1;
+  background:#000000;
+  opacity:0.1;
+}
+
+.header-content{
+  z-index:2;
+
+}
+
+
+.header-content h1{
+  padding-top: 30px;
+  font-size:40px;
+  text-align: center;
+
+
+}
+
+.header-content p{
+  font-size:25px;
+  text-align: center;
+  font-family: Montserrat;
+
+}
+
+.btn{
+  background: #0A1D39;
+  color:#fff;
+  padding:5px 40px;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-left: 30px
+
+}
+
 
 
 
