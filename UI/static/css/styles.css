@@ -22,13 +22,17 @@ body{
  }
  .container {
     width: 380px;
-    padding-left: 480px;
+    padding-left: 512px;
     
     
 }
 
 .formregister:hover {
     box-shadow: 0 8px 16px 0 #636363;
+}
+.formregister  a {
+  text-decoration: none;
+  color: #0A1D39
 }
 form input {
     font-family: "Roboto", sans-serif;
