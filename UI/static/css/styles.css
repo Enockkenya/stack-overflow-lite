@@ -132,8 +132,8 @@ h2{
 }
 
 .btn{
-  background:	#68BDFE;
-  color:#0A1D39;
+  background:#0A1D39;;
+  color:	#ffffff;
   padding:5px 40px;
   text-decoration: none;
   border-radius: 10px;
@@ -141,7 +141,20 @@ h2{
 
 }
 
+.section-index{
+  background-image:url('../images/new1.jpg');
+  background-size: cover;
+}
 
+/* for later use in development */
+/* .section-login{
+  
+  background-size: cover;
+}
+.section-signup{
+  background-image:url('../images/new1.jpg');
+  
+} */
 
 
 
