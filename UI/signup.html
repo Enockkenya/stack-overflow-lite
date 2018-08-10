@@ -9,26 +9,32 @@
     </head>
     <body> 
             <section class="section section-signup">
-            <div class="navbar">
-                    <a href="index.html"></a>  <img src="static/images/applogo.png" alt="logo"  >
-                      <a href="index.html">stack overflow lite</a>
-            
-                    </div>
+                    <nav>
+                            <ul>
+                                <li>
+                                    <h1><a href="#">Stack Overflow Lite</a></h1>
+                                </li>
+                                <li>
+                                  <a href="index.html"></a>  <img src="static/images/applogo.png" alt="logo"  >
+                                </li>
+                                </div>
+                            </ul>
+                        </nav>
         <div class="container">
             <div class="formregister">
                     
                 <h2>Create A New Account </h2>
-                    <form>
-                        <p></p>
+                    <form action="login.html" method="get">
+                        
                         <input type = "text" name = "your_name" placeholder = "Name">
-                        <p></p>
+                        
                         <input type = "email" name = "your_email" placeholder = "Email Address">
-                        <p></p>
+                        
                         <input type = "password" name = "your_password" placeholder = "password">
-                        <p></p>
+                    
                         <input type = "password" name = "confirm_password" placeholder = "Confirm Password"><br><br>
                         <button>Sign up</button><br><br>
-                        <a href="#" onclick="redirect">Already a member? Log in</a>
+                        <a href="login.html" onclick="redirect">Already a member? Log in</a>
                     </form>
                     
             </div>
