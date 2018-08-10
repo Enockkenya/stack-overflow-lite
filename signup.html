@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +7,33 @@
         <link rel = "stylesheet" href = "static/css/styles.css">
         <title>Sign up</title>
     </head>
-    <body> 
-            <section class="section section-signup">
-                    <nav>
-                            <ul>
-                                <li>
-                                    <h1><a href="#">Stack Overflow Lite</a></h1>
-                                </li>
-                                <li>
-                                  <a href="index.html"></a>  <img src="static/images/applogo.png" alt="logo"  >
-                                </li>
-                                </div>
-                            </ul>
-                        </nav>
-        <div class="container">
-            <div class="formregister">
-                    
-                <h2>Create A New Account </h2>
-                    <form action="login.html" method="get">
-                        
-                        <input type = "text" name = "your_name" placeholder = "Name">
-                        
+    <body>     
+        <nav>
+            <ul>
+                <li>
+                    <h1><a href="#">Stack Overflow Lite</a></h1>
+                 </li>
+                 <li>
+                    <a href="index.html"></a>  <img src="static/images/applogo.png" alt="logo"  >
+                 </li>
+             </ul>
+         </nav>
+        <section class="section section-signup">
+            <div class="container">
+               <div class="formregister">
+                   <h2>Create A New Account </h2>
+                        <form action="login.html" method="get">                      
+                        <input type = "text" name = "your_name" placeholder = "Name">                       
                         <input type = "email" name = "your_email" placeholder = "Email Address">
-                        
-                        <input type = "password" name = "your_password" placeholder = "password">
-                    
+                        <input type = "password" name = "your_password" placeholder = "password">                   
                         <input type = "password" name = "confirm_password" placeholder = "Confirm Password"><br><br>
                         <button>Sign up</button><br><br>
-                        <a href="login.html" onclick="redirect">Already a member? Log in</a>
-                    </form>
+                        <a href="login.html" onclick="redirect">Already a member? Log in</a><br>
+                        <p><small>by clicking sign up you agree to our terms & conditions</small></p>
+                        </form>
                     
-            </div>
-        </div> 
+                 </div>
+             </div> 
         </section>
-    </body>
-</html>
+     </body>
+</html> 
