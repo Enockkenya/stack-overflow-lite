@@ -98,7 +98,7 @@ button {
 }
 
 .containerindex{
-  max-width:820px;
+  width:820px;
   padding-left:10px;
   margin:auto;
   text-align:center;
@@ -168,10 +168,11 @@ button {
   font-family: "Roboto", sans-serif;
   background-color: #E5E5E6;
   border-radius: 10px;
+ 
 }
 
 .user{
-  max-width: 380px;
+  width: 380px;
   padding-left: 30px
  }
 #username{
@@ -249,4 +250,31 @@ h2{
 h5{
   color: #0A1D39;
   font-family: "Roboto", sans-serif;
-    }
+ }
+
+ .usercontentcontainer{
+  width: 880px;
+  float:right;
+ }
+
+ .userquestions {
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+}
+  
+
+.usercontent{
+  width: 880px;
+  float:right;
+ }
+ .viewanswers {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  background:	#5DBCD2;
+  width: 30%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 5px;
+}
