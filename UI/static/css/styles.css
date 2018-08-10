@@ -51,12 +51,6 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
-h2{
-    color: #0A1D39;
-}
-h4{
-  color: #0A1D39;
-}
 
 /* navbar styles */
 
@@ -176,14 +170,27 @@ h4{
   border-radius: 10px;
 }
 
-#username{
-  text-align:center;
-  margin-top: 20px;
-  }
 .user{
   max-width: 380px;
   padding-left: 30px
  }
+#username{
+  text-align:center;
+  margin-top: 20px;
+  }
+
+ #editprofile{
+  text-align:center;
+  margin-top: 20px;
+  }
+ #help{
+    text-align:center;
+    margin-top: 20px; 
+ }
+ #bio{
+  text-align:center;
+  margin-top: 20px; 
+}
  .avatar {
   vertical-align: middle;
   width: 70px;
@@ -226,3 +233,20 @@ h4{
 color: #0A1D39;
 }
 
+h2{
+  color: #0A1D39;
+ }
+
+ h1{
+    color: #0A1D39;
+ }
+ h3{
+    color: #0A1D39;
+ }
+ h1{
+  color: #0A1D39;
+  }
+h5{
+  color: #0A1D39;
+  font-family: "Roboto", sans-serif;
+    }
