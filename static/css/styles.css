@@ -2,11 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 body{
-    
-   background-image:url('../images/b3.jpg');
     margin: 0;
     padding: 0;
-    background-size: cover;
+    background-color: aliceblue
 }
 .container {
   max-width: 380px;
@@ -142,9 +140,12 @@ li a {
 
 }
 
+
 .section-index{
   background-image:url('../images/new1.jpg');
   background-size: cover;
+  
+  
 }
 .section-profile{
  background-color:#E8EAF2;
@@ -213,6 +214,8 @@ button {
   color: #FFFFFF;
   cursor: pointer;
   border-radius: 5px;
+  box-shadow: 0 4px 8px 0 #636363;
+  transition: 0.3s;
 }
 
 h4{
