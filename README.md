@@ -1,7 +1,9 @@
+[![Build Status](https://travis-ci.org/Enockkenya/stack-overflow-lite.svg?branch=ch-write-test-cases-159753094)](https://travis-ci.org/Enockkenya/stack-overflow-lite)
+
 # STACK-OVERFLOW-LITE
 
 ## Project Overview
-### StackOverflow-lite is a platform where people can ask questions and provide answers (( Andela challange cohort 31 ))
+ StackOverflow-lite is a platform where people can ask questions and provide answers ( Andela challange cohort 31 )
 
 #### By ****Enock OMONDI****
 ## Description
@@ -23,7 +25,10 @@ Clone the repository:
 ```git clone "" ```
 
 
+
+
 ## Dependencies
+
 - Install the project dependencies in the environment:
 > $ pip install -r requirements.txt
 
