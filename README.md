@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Enockkenya/stack-overflow-lite.svg?branch=ch-write-test-cases-159753094)](https://travis-ci.org/Enockkenya/stack-overflow-lite)
+[![Build Status](https://travis-ci.org/Enockkenya/stack-overflow-lite.svg?branch=master)](https://travis-ci.org/Enockkenya/stack-overflow-lite)
 
 # STACK-OVERFLOW-LITE
 
