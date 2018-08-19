@@ -59,11 +59,6 @@ class StackOverflow_lite(unittest.TestCase):
         response = self.client.delete('/api/v1/questions/1', content_type='application/json')
         self.assertEqual(response.status_code, 200)
 
-    def test_answer_question(self):
-        """Test answer a question."""
-        response = self.client.post(
-            '/api/v1/questions/1/answers', data=json.dumps(self.answers), content_type='application/json')
-        self.assertEqual(response.status_code, 200)
 
 if __name__ == "__main__":
     unittest.main()

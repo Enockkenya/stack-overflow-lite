@@ -63,71 +63,62 @@ class StackOverflow_lite_Users(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         
         
-    #     #no username
-        # response = self.client.post('/api/v1/auth/signup',
-        #                          data=json.dumps(self.user_no_username), content_type = "application/json")
-        # self.assertEqual(response.status_code, 400)
-        # dataman = json.loads(response.get_data())
-        # self.assertEqual(dataman['message'], 'Username is required')
+    # #     #no username
+    #     response = self.client.post('/api/v1/auth/signup',
+    #                              data=json.dumps(self.user_no_username), content_type = "application/json")
+    #     self.assertEqual(response.status_code, 400)
+    #     dataman = json.loads(response.get_data())
+    #     self.assertEqual(dataman['message'], 'User successfully registered!')
 
-    #     #no email
+    # #     #no email
     #     response = self.client.post('api/v1/auth/signup',
     #                              data=json.dumps(self.user_no_email),
     #                              headers={'content-type': "application/json"})
-    #     self.assertEqual(response.status_code, 400)
+    #     self.assertEqual(response.status_code, 404)
     #     dataman = json.loads(response.get_data())
     #     self.assertEqual(dataman['message'], 'Email is required!')
 
-    #     #invalid email
+    # #     #invalid email
     #     response = self.client.post('api/v1/auth/signup',
     #                              data=json.dumps(self.user_invalid_email),
     #                              headers={'content-type': "application/json"})
-    #     self.assertEqual(response.status_code, 400)
+    #     self.assertEqual(response.status_code, 404)
     #     dataman = json.loads(response.get_data())
     #     self.assertEqual(dataman['message'], 'Email is invalid')
-    #     #no password
+    # #     #no password
     #     response = self.client.post('api/v1/auth/signup',
     #                              data=json.dumps(self.user_no_password),
     #                              headers={'content-type': "application/json"})
-    #     self.assertEqual(response.status_code, 400)
+    #     self.assertEqual(response.status_code, 404)
     #     dataman = json.loads(response.get_data())
     #     self.assertEqual(dataman['message'], 'Passord is required!')
      
-    #     #existing user
+    # #     #existing user
     #     response = self.client.post('api/v1/auth/signup',
     #                              data=json.dumps(self.user_existing),
     #                              headers={'content-type': "application/json"})
-    #     self.assertEqual(response.status_code, 400)
+    #     self.assertEqual(response.status_code, 404)
     #     dataman = json.loads(response.get_data())
     #     self.assertEqual(dataman['message'], 'User already exists!')
 
-   
 
-    # def test_signin_user(self):
-    #     """Test to login a registered user."""
-    #     response = self.client.post('/api/v1/auth/signin', 
-    #                                 data=json.dumps(self.user),
-    #                                 content_type='application/json')
-    #     self.assertEqual(response.status_code, 200)
-
-
-    #     #nopassword
+    # #     #nopassword
     #     response = self.client.post('api/v1/auth/login',
     #                              data=json.dumps(self.no_password),
     #                              headers={'content-type': "application/json"})
-    #     self.assertEqual(response.status_code, 400)
+    #     self.assertEqual(response.status_code, 404)
     #     dataman = json.loads(response.get_data())
     #     self.assertEqual(dataman['message'], 'Password is required')
 
-    #     #no username
+    # #     #no username
     #     response = self.client.post('api/v1/auth/login',
     #                              data=json.dumps(self.no_username),
     #                              headers={'content-type': "application/json"})
-    #     self.assertEqual(response.status_code, 400)
+    #     self.assertEqual(response.status_code, 404)
     #     dataman = json.loads(response.get_data())
     #     self.assertEqual(dataman['message'], 'Username is required')
 
-    #     #incorrect
+    # #     #incorrect
     #     response = self.client.post('api/v1/auth/login',
     #                              data=json.dumps(self.wrong_login),
     #                              headers={'content-type': "application/json"})
@@ -135,7 +126,7 @@ class StackOverflow_lite_Users(unittest.TestCase):
     #     dataman = json.loads(response.get_data())
     #     self.assertEqual(dataman['message'], 'Wrong password!')
 
-    #     #empty
+    # #     #empty
     #     response = self.client.post('api/v1/auth/login',
     #                              data=json.dumps(self.correct_login),
     #                              headers={'content-type': "application/json"})
