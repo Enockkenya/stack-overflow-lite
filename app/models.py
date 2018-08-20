@@ -1,9 +1,23 @@
+from datetime import datetime
+
 class Question(object):
+
     """This class represents the Questions in StackOverflow-lite."""
 
-    def __init__(self, question, date_posted):
-        self.question = question
+    def __init__(self, question_id, date_posted):
+        self.question_id = question_id
         self.date_posted = date_posted
+        self.date_posted = datetime.now()
+        self.Question=[]
+
+    
+    def post_question(self,question_id, category, body, date_posted):
+        new_question = {
+            'question_id': question_id,
+            'category': category,
+            'body': body,
+            'date_posted':date_posted
+            }
 
 
 class Answer(object):
@@ -12,6 +26,7 @@ class Answer(object):
     def __init__(self, answer, date_posted):
         self.answer = answer
         self.date_posted = date_posted
+        self.answer =[]
 
 
 class User(object):
@@ -21,3 +36,4 @@ class User(object):
         self.name = name
         self.email = email
         self.password = password
+        self.User=[]
