@@ -99,5 +99,16 @@ def create_app(config_name):
         answers.append(answer_question)
         return jsonify({'Question': question}, {'Answers': answer_question}), 201
 
+    @app.route('/api/v1/questions/<int:id>', methods=['DELETE'])
+    def delete_question(id):
+        # Delete a specific question
+        delete_question = [question for question in questions if question['id'] == id]
+        if len(delete_question) == 0:
+            return jsonify({'Message':"No question found"})
+
+        questions.remove(delete_question[0])
+
+        return jsonify({'Questions': questions}), 200
+
 
     return app
