@@ -13,8 +13,6 @@ def create_app(config_name):
     answers = []
 
 
- 
-                
 
     @app.route('/api/v1/questions', methods=['POST'])
     def question():
@@ -26,7 +24,19 @@ def create_app(config_name):
         questions.append(question)
         return jsonify({'Message': "Question successfully created"} ,{'Questions': questions}), 201
 
+    @app.route('/api/v1/questions', methods=['GET'])
+    def view_all_questions():
+        # retrieve all questions
+        return jsonify({'Questions': questions}), 200
 
+    @app.route('/api/v1/questions/<int:id>', methods=['GET'])
+    def single_question(id):
+        # retrive a question by it's ID
+        single_question = [question for question in questions if question['id'] == id]
+        if len(single_question) == 0:
+            return jsonify({'Message': "No question found"})
+
+        return jsonify({'Questions': single_question}), 200
 
 
     return app
