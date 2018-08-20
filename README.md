@@ -1,54 +1,56 @@
-![stackoverflowlite](app.png)
+[![Build Status](https://travis-ci.org/Enockkenya/stack-overflow-lite.svg?branch=master)](https://travis-ci.org/Enockkenya/stack-overflow-lite)
 
-# STACK OVERFLOW LITE 
+# STACK-OVERFLOW-LITE
+
 ## Project Overview
-### StackOverflow-lite is a platform where people can ask questions and provide answers. 
-
+ StackOverflow-lite is a platform where people can ask questions and provide answers ( Andela challange cohort 31 )
 
 #### By ****Enock OMONDI****
+## Description
 
-## Requirements
-* Browser
-* Good internet connection
+#### It is an API that enables CRUD functionality for posting, viewing, answering, and deleting questions on the platform
 
-## How to use
-* Open the site - link [here]()
-* Create an account if you are new or login to application
-* Create profile 
-* Post a question
-* Search for different questions
-* answer questions to different questions.
+## Prerequisites
 
-## Technologies used
-* html/css- Used for-frontend
+* Python 3.6 or later
+* flask
+* Git 
+* Virtualenv
+* Pytest
 
+## Development
 
-###### Deployment
-* not yet 
+Clone the repository:
 
-## For developers view the specifications
-
-### Installing & testing
-```
-Clone  from my github(https://github.com/Enockkenya/stack-overflow-lite/tree/features)
-```
-```
-Cd to the UI directory and open index.html using your favourite browser
-```
-
-### Requirements
-* PC
+```git clone "" ```
 
 
-### KNOWN BUGS
-- all functionalities not implimented
 
-### Meta
-Incase of any queries, email me at -(djseanizellkenya@gmail.com)
-<br>
-Github - [Enock OMONDI](https://github.com/Enockkenya)
 
-### License
-This is an opensource software therefore the license is [MIT](https://choosealicense.com/licenses/mit/)
-<br>
-Copyright (c) 2018 
+## Dependencies
+
+- Install the project dependencies in the environment:
+> $ pip install -r requirements.txt
+
+## API endpoints
+
+Test | API-endpoint | HTTP-Verb
+------------ | -------------- | ------------ 
+User can post a question | /api/v1/questions | POST
+User can view all questions | /api/v1/questions | GET
+User can view a single question | /api/v1/questions/<question_id> | GET
+User can update a question | /api/v1/questions/<question_id> |PUT
+User can delete a a question | /api/v1/questions/<question_id> | DELETE
+User can create an account | /auth/signin | POST
+User can log into the account | /auth/login | POST
+User can post an answer to a question | /api/v1/questions<question_id>Answers<answer_id> | POST
+User can downvote or upvote an answer to a question | /api/v1/questions<question_id>Answers<answer_id>vote?vote | POST
+
+## Testing
+Test the endpoints using Postman or curl
+
+*this readme will be updated periodically*
+
+## Acknowledgement
+
+*Andela Kenya*
